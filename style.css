@@ -45,6 +45,19 @@ body {
   opacity: 0.85;
 }
 
+.linkedin-btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  background: #0a66c2;      /* LinkedIn blue */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.linkedin-btn:hover {
+  background: #004182;
+}
 
 section {
   max-width: 900px;
