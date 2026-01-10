@@ -24,8 +24,8 @@ body {
 
 /* Image on the left */
 .hero-image img {
-  width: 440px;
-  height: 440px;
+  width: 900px;
+  height: 900px;
   object-fit: cover;
   border-radius: 0%; /* circular photo */
   border: 0px solid #fff;
