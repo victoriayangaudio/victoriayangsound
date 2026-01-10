@@ -65,7 +65,7 @@ body {
 .hero-contact {
   font-weight: 300;
   font-size: 0.70rem;
-  margin-top: auto; /* pushes contact to bottom */
+  margin-top: auto;
   opacity: 1.0;
 }
 
