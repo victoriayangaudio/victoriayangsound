@@ -42,7 +42,13 @@ body {
 .hero-text p {
   font-size: 1.0rem;
   margin-top: 2.0rem;
-  opacity: 0.85;
+  opacity: 1.0;
+}
+
+.hero-text q {
+  font-size: 1.0rem;
+  margin-bottom: 2.0rem;
+  opacity: 1.0;
 }
 
 .linkedin-btn {
