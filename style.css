@@ -53,7 +53,7 @@ body {
 
 .linkedin-btn {
   display: inline-block;
-  padding: 0.6rem 1.4rem;
+  margin-bottom: 2.0rem;
   background: #0a66c2;      /* LinkedIn blue */
   color: #ffffff;
   text-decoration: none;
