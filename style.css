@@ -58,9 +58,9 @@ body {
   opacity: 1.0;
 }
 
-.hero-contact {
+.hero-contact p {
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 0.70rem;
   margin-top: auto; /* pushes contact to bottom */
   opacity: 1.0;
 }
@@ -68,7 +68,7 @@ body {
 .linkedin-btn {
   margin-bottom: 2.0rem; 
   color: #edeae0; 
-  font-size: 0.85rem;
+  font-size: 0.70rem;
 }
 
 .linkedin-btn:hover {
