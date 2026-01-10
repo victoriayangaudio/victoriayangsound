@@ -120,11 +120,11 @@ h2 {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #222;
-  color: #ccc;
+  background: #191c2e;
+  color: #edeae0;
 }
 
 footer a {
-  color: #4da3ff;
+  color: #edeae0;
   text-decoration: none;
 }
