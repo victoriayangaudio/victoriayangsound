@@ -16,6 +16,41 @@ header {
   padding: 4rem 1rem;
 }
 
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+  background: #111;
+  color: #fff;
+}
+
+/* Image on the left */
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%; /* circular photo */
+  border: 4px solid #fff;
+}
+
+/* Text on the right */
+.hero-text {
+  text-align: right;
+  max-width: 60%;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  opacity: 0.85;
+}
+
+
 section {
   max-width: 900px;
   margin: auto;
