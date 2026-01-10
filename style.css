@@ -10,9 +10,9 @@ body {
 }
 
 header {
-  background: ##272c49;
+  background: #272c49;
   color: #edeae0;
-  text-align: top;
+  text-align: center;
   padding: 4rem 1rem;
 }
 
@@ -21,8 +21,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 4rem 6rem;
-  background: #111;
-  color: #fff;
+  background: #272c49;
+  color: #edeae0;
 }
 
 /* Image on the left */
