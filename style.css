@@ -27,6 +27,7 @@ body {
   height: 900px;
   object-fit: cover;
   border-radius: 0%; 
+  display: block;
   border: 0px solid #fff;
 }
 
