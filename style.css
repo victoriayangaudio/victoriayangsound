@@ -57,10 +57,10 @@ body {
   opacity: 1.0;
 }
 
-.hero-text contact {
+.hero-contact {
   font-weight: 300;
   font-size: 0.85rem;
-  margin-top: auto;
+  margin-top: auto; /* pushes contact to bottom */
   opacity: 1.0;
 }
 
