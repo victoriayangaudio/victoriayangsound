@@ -29,7 +29,7 @@ body {
 
 /* Text on the right */
 .hero-text {
-  text-align: right;
+  text-align: center;
   max-width: 60%;
 }
 
@@ -41,6 +41,7 @@ body {
 
 .hero-text p {
   font-size: 1.0rem;
+  margin-top: 2.0rem;
   opacity: 0.85;
 }
 
