@@ -9,13 +9,6 @@ body {
   color: #242a3d;
 }
 
-header {
-  background: #272c49;
-  color: #edeae0;
-  text-align: center;
-  padding: 4rem 1rem;
-}
-
 .hero {
   display: flex;
   align-items: center;
