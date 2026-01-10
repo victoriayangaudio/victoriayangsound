@@ -59,14 +59,13 @@ body {
 .hero-contact {
   font-size: 0.7rem;
   font-weight: 300;
-  margin-top: auto;
+  margin-top: 528rem;
   padding-top: 2rem;
 }
 .hero-contact p {
   margin: 0;
   font-size: 0.7rem;
   padding-top: 2rem;
-  margin-bottom: 1.5rem;
 }
 .hero-contact a {
   color: #edeae0;
