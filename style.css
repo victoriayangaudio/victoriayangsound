@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: 'Fira Code';
+.fira-code-<font> {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 }
 
 body {
