@@ -59,7 +59,8 @@ body {
 .hero-contact {
   font-size: 0.7rem;
   font-weight: 300;
-  margin-top: 3rem;
+  margin-top: auto;
+  margin-bottom: 1.5rem;
   padding-top: 2rem;
 }
 .hero-contact p {
