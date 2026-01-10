@@ -21,14 +21,16 @@ body {
   color: #edeae0;
 }
 
-/* Image on the left */
+.hero-image {
+  margin-left: -6rem; /* cancels the hero padding */
+}
+
 .hero-image img {
-  width: 900px;
-  height: 900px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
   border-radius: 0%; 
   display: block;
-  border: 0px solid #fff;
 }
 
 .hero-text {
