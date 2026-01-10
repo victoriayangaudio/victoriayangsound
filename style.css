@@ -62,11 +62,17 @@ body {
   opacity: 1.0;
 }
 
+.hero-contact-box {
+  display: flex;
+  align-items: flex-end;   /* pushes content to bottom of hero */
+  height: 100%;            /* same height as hero */
+  margin-left: 2rem;       /* space from text */
+}
+
 .hero-contact {
+  font-size: 0.7rem;       /* smaller than main paragraph */
   font-weight: 300;
-  font-size: 0.70rem;
-  margin-top: auto;
-  opacity: 1.0;
+  margin: 0;
 }
 
 .linkedin-btn {
