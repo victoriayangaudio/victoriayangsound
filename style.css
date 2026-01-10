@@ -52,11 +52,9 @@ body {
 }
 
 .linkedin-btn {
-  display: inline-block;
-  margin-bottom: 2.0rem;  /* LinkedIn blue */
+  margin-bottom: 2.0rem; 
   color: #edeae0; 
-  text-decoration: none;
-  font-weight: 500;
+  font-size: 1.0rem;
 }
 
 .linkedin-btn:hover {
