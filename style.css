@@ -59,7 +59,6 @@ body {
 }
 
 .hero-contact {
-  font-family: 'Fira Code', monospace;
   font-weight: 300;
   font-size: 0.85rem;
   margin-top: auto; /* pushes contact to bottom */
@@ -67,7 +66,6 @@ body {
 }
 
 .linkedin-btn {
-  font-family: 'Fira Code', monospace;
   margin-bottom: 2.0rem; 
   color: #edeae0; 
   font-size: 0.85rem;
