@@ -16,7 +16,7 @@ body {
 .hero {
   display: flex;
   align-items: flex-start;
-  padding: 2rem 6rem;
+  padding: 0rem 6rem;
   background: #272c49;
   color: #edeae0;
 }
@@ -26,8 +26,8 @@ body {
 }
 
 .hero-image img {
-  width: 500px;
-  height: 500px;
+  width: 530px;
+  height: 530px;
   object-fit: cover;
   border-radius: 0%; 
   display: block;
