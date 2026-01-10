@@ -5,14 +5,14 @@
 
 body {
   margin: 0;
-  background: #f5f5f5;
-  color: #333;
+  background: #edeae0;
+  color: #242a3d;
 }
 
 header {
-  background: #111;
-  color: #fff;
-  text-align: center;
+  background: ##272c49;
+  color: #edeae0;
+  text-align: top;
   padding: 4rem 1rem;
 }
 
