@@ -16,7 +16,7 @@ body {
 .hero {
   display: flex;
   align-items: flex-start;
-  padding: 0rem 6rem;
+  padding: 0 6rem;
   background: #272c49;
   color: #edeae0;
 }
