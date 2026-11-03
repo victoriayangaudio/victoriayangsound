@@ -11,6 +11,96 @@
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <!-- Link your CSS file -->
   <link rel="stylesheet" href="style.css">
+   <style>
+    .projects .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px;
+      align-items: start;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Each project spans 3 shared rows (heading / text / media) so
+       headings, descriptions and videos line up across a row. */
+    .projects .project-grid .project {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      min-width: 0;
+      display: grid;
+      grid-row: span 3;
+      grid-template-rows: subgrid;
+      row-gap: 12px;
+      align-content: start;
+    }
+
+    .projects .project-grid .project h3,
+    .projects .project-grid .project p {
+      margin: 0;
+    }
+
+    .projects .project-grid .project .video,
+    .projects .project-grid .project .spotify,
+    .projects .project-grid .project .placeholder-media {
+      align-self: start;
+    }
+
+    /* Placeholder media box (matches the video aspect ratio) */
+    .projects .project-grid .placeholder-media {
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 16 / 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed currentColor;
+      border-radius: 12px;
+      opacity: 0.45;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .projects .project-grid .project h3 {
+      font-size: 1.1rem;
+    }
+
+    .projects .project-grid .project p {
+      font-size: 0.95rem;
+    }
+
+    /* Smaller YouTube previews that scale with their column */
+    .projects .project-grid .video {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .projects .project-grid .video iframe {
+      display: block;
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9;
+    }
+
+    /* Compact Spotify player */
+    .projects .project-grid .spotify {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .projects .project-grid .spotify iframe {
+      display: block;
+      width: 100% !important;
+      height: 152px !important;
+    }
+
+    /* Single column on tablets and phones */
+    @media (max-width: 800px) {
+      .projects .project-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
  <header class="hero">
@@ -36,63 +126,77 @@
   <section class="projects">
     <h2>PROJECTS</h2>
 
-    <div class="project">
-      <h3> <i>Arrival</i> (2016) - Original Composition</h3>
-      <p> November 2025: I created an original composition for a scene from the 2016 sci-fi film <i>Arrival</i>, using virtual instruments, synthesizers, recorded sounds, and sample libraries. The piece was composed in Logic Pro and mixed in Pro Tools.</p>
-      <div class="video">
-        <iframe 
-          src="https://www.youtube.com/embed/YoWBGQINfvE"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+    <div class="project-grid">
+
+      <!-- Placeholder project: top of left column -->
+      <div class="project">
+        <h3>Project Title - Role / Type of Work</h3>
+        <p>Month Year: Placeholder description. Briefly describe what you worked on, the tools and techniques you used, and your role in the project.</p>
+        <div class="placeholder-media">Video or audio embed coming soon</div>
       </div>
-    </div>
 
-<div class="project">
-      <h3> <i>Spider-Man: Into the Spider-Verse</i> (2018) - Original Sound Design and Composition </h3>
-      <p> December 2025: I produced original music for a scene from the 2018 sci-fi film <i>Spider-Man: Into the Spider-Verse</i>, using virtual instruments, synthesizers, recorded sounds, and sample libraries. I also completed the sound design using recorded foley, sound libraries, and field recordings. The music was composed in Ableton Live and mixed alongside the sound design in Pro Tools.</p>
-      <div class="video">
-        <iframe 
-          src="//www.youtube.com/embed/129aQMB-CJQ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <!-- Placeholder project: top of right column -->
+      <div class="project">
+        <h3>Project Title - Role / Type of Work</h3>
+        <p>Month Year: Placeholder description. Briefly describe what you worked on, the tools and techniques you used, and your role in the project.</p>
+        <div class="placeholder-media">Video or audio embed coming soon</div>
       </div>
-    </div>
 
-    
-    <div class="project">
-      <h3>The Pink Panther -  Original Sound Design</h3>
-      <p>October 2024: I used recorded foley, sound libraries, and found sounds for the sound design for an episode from <i>The Pink Panther</i>.</p>
-      <div class="video">
-        <iframe 
-          src="https://www.youtube.com/embed/igqAN0jJ0E4"
-          title="YouTube video player"
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
+      <div class="project">
+        <h3> <i>Arrival</i> (2016) - Original Composition</h3>
+        <p> November 2025: I created an original composition for a scene from the 2016 sci-fi film <i>Arrival</i>, using virtual instruments, synthesizers, recorded sounds, and sample libraries. The piece was composed in Logic Pro and mixed in Pro Tools.</p>
+        <div class="video">
+          <iframe 
+            src="https://www.youtube.com/embed/YoWBGQINfvE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
+
+      <div class="project">
+        <h3> <i>Spider-Man: Into the Spider-Verse</i> (2018) - Original Sound Design and Composition </h3>
+        <p> December 2025: I produced original music for a scene from the 2018 sci-fi film <i>Spider-Man: Into the Spider-Verse</i>, using virtual instruments, synthesizers, recorded sounds, and sample libraries. I also completed the sound design using recorded foley, sound libraries, and field recordings. The music was composed in Ableton Live and mixed alongside the sound design in Pro Tools.</p>
+        <div class="video">
+          <iframe 
+            src="https://www.youtube.com/embed/129aQMB-CJQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>The Pink Panther -  Original Sound Design</h3>
+        <p>October 2024: I used recorded foley, sound libraries, and found sounds for the sound design for an episode from <i>The Pink Panther</i>.</p>
+        <div class="video">
+          <iframe 
+            src="https://www.youtube.com/embed/igqAN0jJ0E4"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Cinema Sounds and Secrets - Tribute 57: Maggie Smith</h3>
+        <p>October 2024: For this episode, I edited the podcast recordings by cleaning dialogue tracks, removing background noise, and ensuring overall clarity and consistency. In between the dialogue, I sourced and incorporated curated clips from Maggie Smith’s films and layered in film score excerpts to enhance narrative moments.</p>
+        <div class="spotify">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/episode/1kUPPMBBgnz9DHkLEMdOPB?utm_source=generator"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
     </div>
-
-    <div class="project">
-  <h3>Cinema Sounds and Secrets - Tribute 57: Maggie Smith</h3>
-  <p>October 2024: For this episode, I edited the podcast recordings by cleaning dialogue tracks, removing background noise, and ensuring overall clarity and consistency. In between the dialogue, I sourced and incorporated curated clips from Maggie Smith’s films and layered in film score excerpts to enhance narrative moments.</p>
-
-  <div class="spotify">
-   <iframe data-testid="embed-iframe" style="border-radius:12px" 
-     src="https://open.spotify.com/embed/episode/1kUPPMBBgnz9DHkLEMdOPB?
-     utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" 
-     allow="autoplay; clipboard-write; encrypted-media; 
-     fullscreen; picture-in-picture" loading="lazy">
-     
-     </iframe>
-  </div>
-</div>
-
   </section>
 
   <footer>
